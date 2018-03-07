@@ -1,3 +1,5 @@
+#Given an array of dictionaries, find the median rating and return the id
+
 #Expected: 5.0
 businesses_odd = [
 
