@@ -38,9 +38,9 @@ businesses_two = [
 
 def medianRating(dictBusinesses):
 	seenValuesArray = []
-	for business in dictBusinesses:
+	for business in dictBusinesses: #Theta(N)
 		seenValuesArray.append(business['rating'])
-	seenValuesArray.sort()
+	seenValuesArray.sort() #Theta(NlogN)
 	length = len(seenValuesArray)
 	if length == 0:
 		return None
@@ -51,3 +51,4 @@ def medianRating(dictBusinesses):
 
 def averageRating(num1, num2):
 	return (num1 + num2) / 2.0
+#Overall runtime Theta(NlogN)
